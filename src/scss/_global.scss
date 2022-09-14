@@ -7,6 +7,9 @@ html {
 *::before,
 *::after {
 	box-sizing: inherit;
+	border-width: 0;
+	border-style: solid;
+	border-color: currentColor;
 }
 
 body {
@@ -14,6 +17,10 @@ body {
 	line-height: 1.3;
 	margin: 0;
 	padding: 0;
-	background-color: gray;
-	color: white;
+	background-color: white;
+	color: gray;
+
+	@media #{$mq-1000-up} {
+		padding: 1.5rem;
+	}
 }
