@@ -17,11 +17,7 @@ export default function Navbar() {
 						<img className='navbar-menu-icon' src={menu} />
 					</button>
 				</div>
-				<div
-					className={`navbar-menu-items ${
-						btnClassNames ? 'navbar-closed' : ''
-					}`}
-				>
+				<div className={`navbar-menu-items ${btnClassNames ? 'closed' : ''}`}>
 					<a href='#About'>About</a>
 					<a href='#Projects'>Projects</a>
 					<a href='#Skills'>Skills</a>

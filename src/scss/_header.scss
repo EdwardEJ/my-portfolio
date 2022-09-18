@@ -44,6 +44,11 @@
 			position: absolute;
 			right: 0;
 			padding-right: 1rem;
+			@media #{$mq-620-down} {
+				&.closed {
+					display: none;
+				}
+			}
 			a {
 				display: inline-flex;
 				align-self: end;
@@ -57,9 +62,6 @@
 					border-color: darkorchid;
 				}
 			}
-		}
-		&-closed {
-			display: none;
 		}
 	}
 }
