@@ -1,6 +1,10 @@
 @import 'variables';
 
 .header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
 	// Hamburger Open Styles
 	&.open {
 		.header__toggle {
@@ -18,19 +22,21 @@
 		}
 	}
 	.navbar {
-		position: sticky;
-		top: 0;
+		// position: sticky;
+		// top: 0;
+		// display: flex;
+		// justify-content: space-between;
+		// align-items: baseline;
 		&-mobile-button {
 			@media #{$mq-620-up} {
 				display: none;
 			}
 		}
 		&-container {
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-			height: 4rem;
-			padding: 0 1rem;
+			position: relative;
+			button {
+				display: flex;
+			}
 		}
 		&-menu-icon {
 			@media #{$mq-620-down} {
@@ -41,19 +47,20 @@
 		&-menu-items {
 			display: flex;
 			flex-direction: column;
+			margin-top: 0.25rem;
 			position: absolute;
 			right: 0;
-			padding-right: 1rem;
+			@media #{$mq-620-up} {
+				flex-direction: row;
+			}
 			@media #{$mq-620-down} {
 				&.closed {
 					display: none;
 				}
 			}
 			a {
-				display: inline-flex;
 				align-self: end;
-				align-items: center;
-				padding-top: 0.25rem;
+				padding: 0.5rem 0;
 				border-color: transparent;
 				border-bottom-width: 2px;
 				&:hover {
