@@ -2,18 +2,28 @@
 
 .header {
 	display: flex;
-	flex-direction: column;
 	justify-content: space-between;
-	align-items: center;
 	padding: 1rem;
+	@media #{$mq-620-up} {
+		flex-direction: column;
+	}
+
+	h1 {
+		@media #{$mq-620-down} {
+			max-width: fit-content;
+		}
+	}
+
+	&-container {
+		@media #{$mq-620-up} {
+			text-align: center;
+		}
+	}
 
 	// Hamburger Open Styles
 	.navbar {
 		&-container {
 			position: relative;
-			button {
-				display: flex;
-			}
 		}
 		&-menu-icon {
 			@media #{$mq-620-down} {
@@ -40,7 +50,6 @@
 				align-self: end;
 				margin-top: 0.5rem;
 				padding-top: 0.5rem;
-				font-weight: 500;
 				font-size: 1.2rem;
 				@media #{$mq-620-up} {
 					padding: 0 3rem;

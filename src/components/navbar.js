@@ -9,8 +9,10 @@ export default function Navbar() {
 
 	return (
 		<header className={`header ${animateMenu ? 'nav-open' : ''}`}>
-			<h1>Edward Estrada</h1>
-			<h2>Software Developer</h2>
+			<div className='header-container'>
+				<h1>Edward Estrada</h1>
+				<h2>Software Developer</h2>
+			</div>
 			<div className='navbar-container'>
 				<button
 					id='btnHamburger'

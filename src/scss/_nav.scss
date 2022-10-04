@@ -7,6 +7,8 @@
 		outline: none;
 		background: none;
 		padding: 0;
+		margin: auto;
+		height: 1.25rem;
 
 		@media #{$mq-620-up} {
 			display: none;
@@ -20,13 +22,13 @@
 			transition: all 200ms ease-in-out;
 			.nav-open & {
 				&:nth-child(1) {
-					transform: rotate(45deg) translate(5px, 3.5px);
+					transform: rotate(45deg) translate(7px, 6px);
 				}
 				&:nth-child(2) {
 					opacity: 0;
 				}
 				&:nth-child(3) {
-					transform: rotate(-45deg) translate(7px, -4.5px);
+					transform: rotate(-45deg) translate(4px, -3px);
 				}
 			}
 		}
