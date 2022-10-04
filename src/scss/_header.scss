@@ -8,28 +8,9 @@
 	@media #{$mq-620-up} {
 		align-items: flex-end;
 	}
+
 	// Hamburger Open Styles
-	&.open {
-		.header__toggle {
-			> span:first-child {
-				transform: rotate(45deg);
-			}
-
-			> span:nth-child(2) {
-				opacity: 0;
-			}
-
-			> span:last-child {
-				transform: rotate(-45deg);
-			}
-		}
-	}
 	.navbar {
-		&-mobile-button {
-			@media #{$mq-620-up} {
-				display: none;
-			}
-		}
 		&-container {
 			position: relative;
 			button {
@@ -67,7 +48,7 @@
 				}
 				&:hover {
 					color: rgb(85, 85, 85);
-					box-shadow: inset 0 -2px 0 0 rgb(173, 81, 219);
+					box-shadow: inset 0 -2px 0 0 black;
 				}
 			}
 		}

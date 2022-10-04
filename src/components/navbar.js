@@ -1,21 +1,26 @@
 import React, { useState } from 'react';
-import menu from '../images/menu.svg';
 
 export default function Navbar() {
-	const [btnClassNames, setbtnClassNames] = useState(true);
+	const [animateMenu, setAnimateMenu] = useState(false);
 
 	function toggleNavItems() {
-		setbtnClassNames(!btnClassNames);
+		setAnimateMenu(!animateMenu);
 	}
 
 	return (
-		<header className='header'>
+		<header className={`header ${animateMenu ? 'nav-open' : ''}`}>
 			<h2>First Name Last Name</h2>
 			<div className='navbar-container'>
-				<button onClick={toggleNavItems} className='navbar-mobile-button'>
-					<img className='navbar-menu-icon' src={menu} />
+				<button
+					id='btnHamburger'
+					className='nav__toggle'
+					onClick={toggleNavItems}
+				>
+					<span></span>
+					<span></span>
+					<span></span>
 				</button>
-				<div className={`navbar-menu-items ${btnClassNames ? 'closed' : ''}`}>
+				<div className={`navbar-menu-items ${animateMenu ? '' : 'closed'}`}>
 					<a href='#About'>About</a>
 					<a href='#Projects'>Projects</a>
 					<a href='#Skills'>Skills</a>
