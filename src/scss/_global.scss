@@ -87,6 +87,10 @@ video {
 	vertical-align: baseline;
 }
 
+html {
+	height: 100%;
+}
+
 *,
 *::before,
 *::after {
@@ -107,6 +111,10 @@ body {
 	@media #{$mq-1000-up} {
 		padding: 1.5rem;
 	}
+}
+
+img {
+	width: 100%;
 }
 
 ol,
