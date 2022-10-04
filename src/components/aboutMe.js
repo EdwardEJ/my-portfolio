@@ -4,7 +4,7 @@ import aboutMePhoto from '../images/aboutMePhoto.jpg';
 export default function AboutMe() {
 	return (
 		<section className='about-me' id='about-me'>
-			<div>
+			<div className='about-me-img-container'>
 				<img className='aboutMePhoto' src={aboutMePhoto} alt='About Me' />
 			</div>
 			<p>
