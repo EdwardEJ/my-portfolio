@@ -6,19 +6,16 @@ h3 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 4rem;
+	color: black;
 
 	@media #{$mq-1000-up} {
-		font-size: 3rem;
+		font-size: 6rem;
 	}
 }
 
 h2 {
-	font-size: 1.5rem;
-
-	@media #{$mq-1000-up} {
-		font-size: 2rem;
-	}
+	font-size: 2rem;
 }
 
 h3 {

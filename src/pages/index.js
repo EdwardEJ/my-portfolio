@@ -6,7 +6,7 @@ import '../scss/styles.scss';
 const IndexPage = () => {
 	return (
 		<>
-			<Navbar />,
+			<Navbar />
 			<AboutMe />
 		</>
 	);
