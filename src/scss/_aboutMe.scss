@@ -13,6 +13,7 @@
 	p {
 		font-size: 1.2rem;
 		padding: 1rem;
+		color: black;
 		@media #{$mq-620-up} {
 			width: fit-content;
 		}
