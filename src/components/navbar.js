@@ -27,7 +27,7 @@ export default function Navbar() {
 					<a href='#About'>About</a>
 					<a href='#Projects'>Projects</a>
 					<a href='#Skills'>Skills</a>
-					<a href='#Contact'>Contact</a>
+					<a href='#Resume'>Resume</a>
 				</div>
 			</div>
 		</header>

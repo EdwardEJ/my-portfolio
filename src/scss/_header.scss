@@ -40,6 +40,8 @@
 			@media #{$mq-620-up} {
 				flex-direction: row;
 				position: inherit;
+				margin-top: 1rem;
+				justify-content: space-around;
 			}
 			@media #{$mq-620-down} {
 				&.closed {
@@ -52,8 +54,8 @@
 				padding-top: 0.5rem;
 				font-size: 1.2rem;
 				@media #{$mq-620-up} {
-					padding: 0 3rem;
-					margin: auto;
+					margin: 0;
+					padding: 0.25rem;
 				}
 				&:hover {
 					color: rgb(85, 85, 85);

@@ -3,8 +3,19 @@
 	flex-direction: column;
 	align-items: center;
 
+	@media #{$mq-620-up} {
+		flex-direction: row;
+	}
+
+	&-img-container {
+		display: flex;
+	}
 	p {
 		font-size: 1.2rem;
 		padding: 1rem;
+		color: black;
+		@media #{$mq-620-up} {
+			width: fit-content;
+		}
 	}
 }
