@@ -17,6 +17,10 @@
 		padding: 1rem;
 		gap: 1rem 0;
 		margin-bottom: 2rem;
+
+		@media #{$mq-620-up} {
+			margin-bottom: inherit;
+		}
 	}
 
 	&-img-container {
