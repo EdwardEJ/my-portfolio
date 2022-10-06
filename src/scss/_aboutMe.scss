@@ -7,12 +7,27 @@
 		flex-direction: row;
 	}
 
+	h3 {
+		color: black;
+	}
+
+	&-container {
+		display: flex;
+		flex-direction: column;
+		padding: 1rem;
+		gap: 1rem 0;
+		margin-bottom: 2rem;
+
+		@media #{$mq-620-up} {
+			margin-bottom: inherit;
+		}
+	}
+
 	&-img-container {
 		display: flex;
 	}
 	p {
 		font-size: 1.2rem;
-		padding: 1rem;
 		color: black;
 		@media #{$mq-620-up} {
 			width: fit-content;
