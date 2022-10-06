@@ -7,11 +7,14 @@ export default function AboutMe() {
 			<div className='about-me-img-container'>
 				<img className='aboutMePhoto' src={aboutMePhoto} alt='About Me' />
 			</div>
-			<p>
-				Edward is a fullstack software developer focused crafting clean and
-				user-friendly experiences. He loves programming, traveling, cooking,
-				cinema, and mixed martial arts.
-			</p>
+			<div className='about-me-container'>
+				<h3>About Me</h3>
+				<p>
+					Edward is a fullstack software developer focused crafting clean and
+					user-friendly experiences. He loves programming, traveling, cooking,
+					cinema, and mixed martial arts.
+				</p>
+			</div>
 		</section>
 	);
 }

@@ -3,7 +3,7 @@
 .header {
 	display: flex;
 	justify-content: space-between;
-	padding: 1rem;
+	padding: 0 1rem;
 	@media #{$mq-620-up} {
 		flex-direction: column;
 	}
@@ -15,8 +15,17 @@
 	}
 
 	&-container {
+		background-color: #5555551c;
 		@media #{$mq-620-up} {
 			text-align: center;
+		}
+		&.full-bleed {
+			box-shadow: 0 0 0 100vmax #5555551c;
+			clip-path: inset(0 -100vmax);
+		}
+
+		h2 {
+			margin-bottom: 1rem;
 		}
 	}
 
@@ -37,10 +46,11 @@
 			margin-top: 0.25rem;
 			position: absolute;
 			right: 0;
+			color: black;
 			@media #{$mq-620-up} {
 				flex-direction: row;
 				position: inherit;
-				margin-top: 1rem;
+				margin: 1rem 0;
 				justify-content: space-around;
 			}
 			@media #{$mq-620-down} {

@@ -7,8 +7,10 @@ import '../scss/styles.scss';
 const IndexPage = () => {
 	return (
 		<>
-			<Navbar />
-			<AboutMe />
+			<main>
+				<Navbar />
+				<AboutMe />
+			</main>
 			<Footer />
 		</>
 	);
