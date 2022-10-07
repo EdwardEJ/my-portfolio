@@ -3,15 +3,17 @@ import Navbar from '../components/navbar';
 import AboutMe from '../components/aboutMe';
 import Footer from '../components/footer';
 import Contact from '../components/contact';
+import ContactForm from '../components/contactForm';
 import '../scss/styles.scss';
 // markup
 const IndexPage = () => {
 	return (
 		<>
-			<main>
+			<main className='main'>
 				<Navbar />
 				<AboutMe />
 				<Contact />
+				<ContactForm />
 			</main>
 			<Footer />
 		</>

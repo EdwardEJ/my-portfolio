@@ -1,10 +1,16 @@
 .footer {
-	position: fixed;
+	position: inherit;
 	bottom: 0;
 	right: 0;
 	left: 0;
 	padding: 0.5rem 1rem;
 	background-color: black;
+	@media #{$mq-620-up} {
+		position: absolute;
+	}
+	@media #{$mq-1000-up} {
+		position: inherit;
+	}
 	&-container {
 		display: flex;
 		justify-content: space-between;
