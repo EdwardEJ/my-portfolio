@@ -1,0 +1,17 @@
+.contact-me {
+	display: flex;
+	margin: 1rem auto;
+	&-btn {
+		@media #{$mq-620-up} {
+			display: none;
+		}
+		border: 1px solid black;
+		color: black;
+		background-color: #5555551c;
+		border-radius: 1rem;
+		padding: 1rem;
+		width: fit-content;
+		margin: auto;
+		font-size: 1.25rem;
+	}
+}
