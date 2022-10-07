@@ -5,7 +5,7 @@ import Footer from '../components/footer';
 import Contact from '../components/contact';
 import ContactForm from '../components/contactForm';
 import '../scss/styles.scss';
-// markup
+
 const IndexPage = () => {
 	return (
 		<>
@@ -13,7 +13,7 @@ const IndexPage = () => {
 				<Navbar />
 				<AboutMe />
 				<Contact />
-				<ContactForm />
+				{/* <ContactForm /> */}
 			</main>
 			<Footer />
 		</>
