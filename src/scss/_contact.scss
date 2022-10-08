@@ -5,6 +5,13 @@
 		@media #{$mq-620-up} {
 			display: none;
 		}
+		&.show {
+			// display: ;
+		}
+
+		&.hide {
+			display: none;
+		}
 		border: 1px solid black;
 		color: black;
 		background-color: #5555551c;

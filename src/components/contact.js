@@ -3,23 +3,19 @@ import ContactForm from './contactForm';
 
 export default function Contact() {
 	const [renderForm, setRenderForm] = useState(false);
+	const viewport_width = window.innerWidth;
+	const smallView = viewport_width <= 620;
 
 	function handleClick() {
 		setRenderForm(!renderForm);
-
-		document
-			.getElementsByClassName('.form-container')
-			?.classList?.add('.mobile');
 	}
 
-	let viewport_width = window.innerWidth;
-	let smallView = viewport_width <= 620;
-
+	console.log(renderForm);
 	return (
 		<>
 			<section className='contact-me'>
 				{renderForm && smallView ? (
-					<ContactForm />
+					<ContactForm renderForm={renderForm} />
 				) : (
 					<button onClick={handleClick} className='contact-me-btn'>
 						Contact Me

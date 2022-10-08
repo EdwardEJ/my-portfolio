@@ -1,16 +1,18 @@
 .form-container {
 	display: none;
-	@media #{$mq-620-up} {
-		display: flex;
-	}
+	// @media #{$mq-620-up} {
+	// 	display: flex;
+	// }
 	flex-direction: column;
 	gap: 0.25rem;
 	margin: 1rem auto;
+	padding: 1rem;
+	background-color: #232129db;
 	h3 {
 		align-self: center;
 	}
 
-	&.mobile {
+	&.show {
 		display: flex;
 	}
 
@@ -19,12 +21,8 @@
 		flex-direction: column;
 		gap: 1rem 0;
 		font-family: Arial, Helvetica, sans-serif;
-		border: 1px solid #b0b8c2;
-		padding: 1rem;
 		width: fit-content;
-		margin: auto;
 		border-radius: 5px;
-		background-color: #232129db;
 
 		.sr-only {
 			border-width: 0;
@@ -39,10 +37,12 @@
 
 		&-inputs {
 			display: flex;
-			justify-content: space-between;
+			// justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 1rem;
 		}
 
-		input {
+		input.form-input {
 			border: 1px solid #cbd5e1;
 			border-radius: 0.5rem;
 			box-shadow: 0 1px 2px rgb(0 0 0 /5%);
@@ -50,9 +50,10 @@
 			padding: 0.5rem 0.75rem;
 			font-size: 0.875rem;
 			font-family: inherit;
+			width: 100%;
 		}
 
-		textarea {
+		textarea.form-textarea {
 			border: 1px solid #cbd5e1;
 			border-radius: 0.5rem;
 			box-shadow: 0 1px 2px rgb(0 0 0 /5%);
