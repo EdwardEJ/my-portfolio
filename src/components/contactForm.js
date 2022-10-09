@@ -10,10 +10,12 @@ export default function ContactForm({ renderForm }) {
 			<form className='form'>
 				<div className='form-inputs'>
 					<Input label='name' placeholder='Name' />
-					<Input label='email' type='email' placeholder='Email' />
+					<Input label='email' type='email' placeholder='Email' required />
 				</div>
 				<TextArea label='message' placeholder='Message' rows='10' />
-				<Button />
+				<div className='button-container'>
+					<Button type='submit'>Send</Button>
+				</div>
 			</form>
 		</div>
 	);
