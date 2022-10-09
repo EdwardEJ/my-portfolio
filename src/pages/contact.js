@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import ContactForm from '../components/contactForm';
+import Button from '../components/Button';
 
 export default function Contact({ onClickrenderForm }) {
 	const [renderForm, setRenderForm] = useState(false);
@@ -17,9 +18,7 @@ export default function Contact({ onClickrenderForm }) {
 				{renderForm && smallView ? (
 					<ContactForm renderForm={renderForm} />
 				) : (
-					<button onClick={handleClick} className='contact-me-btn'>
-						Contact Me
-					</button>
+					<Button onClick={handleClick}>Contact Me</Button>
 				)}
 			</section>
 		</>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HamburgerButton from './HamburgerButton';
 
 export default function Navbar() {
 	const [animateMenu, setAnimateMenu] = useState(false);
@@ -14,15 +15,7 @@ export default function Navbar() {
 				<h2>Software Developer</h2>
 			</div>
 			<div className='navbar-container'>
-				<button
-					id='btnHamburger'
-					className='nav__toggle'
-					onClick={toggleNavItems}
-				>
-					<span></span>
-					<span></span>
-					<span></span>
-				</button>
+				<HamburgerButton onClick={toggleNavItems} />
 				<div className={`navbar-menu-items ${animateMenu ? '' : 'closed'}`}>
 					<a href='#About'>About</a>
 					<a href='#Projects'>Projects</a>
