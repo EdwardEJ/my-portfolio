@@ -1,4 +1,7 @@
 import React from 'react';
+import Input from './Input';
+import TextArea from './TextArea';
+import Button from './Button';
 
 export default function ContactForm({ renderForm }) {
 	return (
@@ -6,19 +9,11 @@ export default function ContactForm({ renderForm }) {
 			<h3>Contact Me</h3>
 			<form className='form'>
 				<div className='form-inputs'>
-					<label className='sr-only' htmlFor='name'>
-						Name:{' '}
-					</label>
-					<input type='text' className='form-input' placeholder='name' />
-					<label className='sr-only' htmlFor='email'>
-						Email:{' '}
-					</label>
-					<input type='email' className='form-input' placeholder='email' />
+					<Input label='name' placeholder='Name' />
+					<Input label='email' type='email' placeholder='Email' />
 				</div>
-				<label className='sr-only' htmlFor='message'>
-					Message:{' '}
-				</label>
-				<textarea className='form-textarea' placeholder='message' cols='5' />
+				<TextArea label='message' placeholder='Message' rows='10' />
+				<Button />
 			</form>
 		</div>
 	);

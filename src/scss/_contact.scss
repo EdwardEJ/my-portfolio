@@ -1,13 +1,16 @@
 .contact-me {
 	display: flex;
+	margin: 0 0 0.75rem;
+	&.show {
+		margin: 0;
+	}
+	@media #{$mq-620-up} {
+		display: none;
+	}
 	&-btn {
 		@media #{$mq-620-up} {
 			display: none;
 		}
-		&.show {
-			// display: ;
-		}
-
 		&.hide {
 			display: none;
 		}

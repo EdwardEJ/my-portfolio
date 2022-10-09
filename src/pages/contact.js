@@ -1,19 +1,19 @@
 import React, { useState } from 'react';
-import ContactForm from './contactForm';
+import ContactForm from '../components/contactForm';
 
-export default function Contact({ testFn }) {
+export default function Contact({ onClickrenderForm }) {
 	const [renderForm, setRenderForm] = useState(false);
 	const viewport_width = window.innerWidth;
 	const smallView = viewport_width <= 620;
 
 	function handleClick() {
 		setRenderForm(!renderForm);
-		testFn(!renderForm);
+		onClickrenderForm(!renderForm);
 	}
 
 	return (
 		<>
-			<section className='contact-me'>
+			<section className={`contact-me ${renderForm ? 'show' : ''} `}>
 				{renderForm && smallView ? (
 					<ContactForm renderForm={renderForm} />
 				) : (

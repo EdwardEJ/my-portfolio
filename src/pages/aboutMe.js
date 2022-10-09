@@ -1,14 +1,13 @@
 import React from 'react';
 import aboutMePhoto from '../images/aboutMePhoto.jpg';
 
-export default function AboutMe({ hideAboutMe }) {
-	console.log('test', hideAboutMe);
+export default function AboutMe({ renderForm }) {
 	return (
 		<section className='about-me' id='about-me'>
 			<div className='about-me-img-container'>
 				<img className='aboutMePhoto' src={aboutMePhoto} alt='About Me' />
 			</div>
-			{!hideAboutMe ? (
+			{!renderForm ? (
 				<div className='about-me-container'>
 					<h3>About Me</h3>
 					<p>

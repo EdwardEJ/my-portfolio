@@ -1,22 +1,21 @@
 import React, { useState } from 'react';
 import Navbar from '../components/navbar';
-import AboutMe from '../components/aboutMe';
+import AboutMe from './aboutMe';
+import Contact from './contact';
 import Footer from '../components/footer';
-import Contact from '../components/contact';
-import ContactForm from '../components/contactForm';
 import '../scss/styles.scss';
 
 const IndexPage = () => {
-	const [hideAboutMe, setHideAboutMe] = useState(false);
-	function hideAboutMeFn() {
-		setHideAboutMe(!hideAboutMe);
+	const [renderForm, setRenderForm] = useState(false);
+	function onClickrenderForm() {
+		setRenderForm(!renderForm);
 	}
 	return (
 		<>
 			<main className='main'>
 				<Navbar />
-				<AboutMe hideAboutMe={hideAboutMe} />
-				<Contact testFn={hideAboutMeFn} />
+				<AboutMe renderForm={renderForm} />
+				<Contact onClickrenderForm={onClickrenderForm} />
 			</main>
 			<Footer />
 		</>
