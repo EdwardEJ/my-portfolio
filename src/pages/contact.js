@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import ContactForm from '../components/contactForm';
 import Button from '../components/Button';
 
@@ -12,14 +12,6 @@ export default function Contact({ onClickrenderForm }) {
 		setRenderForm(!renderForm);
 		onClickrenderForm(!renderForm);
 	}
-
-	useEffect(() => {
-		window.addEventListener('resize', (event) => {
-			const currentWindowSize = event.currentTarget.window.innerWidth;
-			setView(currentWindowSize);
-		});
-		return () => window.removeEventListener('resize');
-	}, []);
 
 	return (
 		<>

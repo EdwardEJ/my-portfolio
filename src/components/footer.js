@@ -14,12 +14,12 @@ export default function Footer() {
 					<ul className='footer-social-links'>
 						<li>
 							<a target='_blank' href='https://github.com/edwardej'>
-								<img src={GitHubIcon} />
+								<img alt='github-icon' src={GitHubIcon} />
 							</a>
 						</li>
 						<li>
 							<a target='_blank' href='https://www.linkedin.com/in/ed-estrada/'>
-								<img src={LinkedInIcon} />
+								<img alt='linkedin-icon' src={LinkedInIcon} />
 							</a>
 						</li>
 					</ul>
