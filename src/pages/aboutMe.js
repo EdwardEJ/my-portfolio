@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutMePhoto from '../images/aboutMePhoto.jpg';
+import aboutMePhoto from '../images/me.jpg';
 
 export default function AboutMe({ renderForm }) {
 	return (

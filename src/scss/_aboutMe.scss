@@ -8,7 +8,7 @@
 	}
 
 	h3 {
-		color: black;
+		color: #553c2c;
 	}
 
 	&-container {
@@ -34,7 +34,6 @@
 	}
 	p {
 		font-size: 1.2rem;
-		color: black;
 		@media #{$mq-620-up} {
 			width: fit-content;
 		}
