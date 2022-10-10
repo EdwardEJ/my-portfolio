@@ -6,7 +6,7 @@ export default function Footer() {
 	return (
 		<footer className='footer' id='copyright'>
 			<div className='footer-container'>
-				<div className='col span_5'>
+				<div>
 					<p>© 2022 Edward Estrada. </p>
 				</div>
 
