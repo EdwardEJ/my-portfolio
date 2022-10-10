@@ -15,7 +15,7 @@ export default function Navbar() {
 				<h2>Software Developer</h2>
 			</div>
 			<div className='navbar-container'>
-				<HamburgerButton onClick={toggleNavItems} />
+				{/* <HamburgerButton onClick={toggleNavItems} /> */}
 				{/* TODO: projects WIP*/}
 				{/* <div className={`navbar-menu-items ${animateMenu ? '' : 'closed'}`}>
 					<a href='#Projects'>Projects</a>
