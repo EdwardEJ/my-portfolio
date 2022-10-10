@@ -1,19 +1,21 @@
-import * as React from 'react';
+import React, { useState } from 'react';
 import Navbar from '../components/navbar';
-import AboutMe from '../components/aboutMe';
+import AboutMe from './aboutMe';
+import Contact from './contact';
 import Footer from '../components/footer';
-import Contact from '../components/contact';
-import ContactForm from '../components/contactForm';
 import '../scss/styles.scss';
 
 const IndexPage = () => {
+	const [renderForm, setRenderForm] = useState(false);
+	function onClickrenderForm() {
+		setRenderForm(!renderForm);
+	}
 	return (
 		<>
 			<main className='main'>
 				<Navbar />
-				<AboutMe />
-				<Contact />
-				{/* <ContactForm /> */}
+				<AboutMe renderForm={renderForm} />
+				<Contact onClickrenderForm={onClickrenderForm} />
 			</main>
 			<Footer />
 		</>

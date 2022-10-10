@@ -8,9 +8,7 @@
 	@media #{$mq-620-up} {
 		position: absolute;
 	}
-	@media #{$mq-1000-up} {
-		position: inherit;
-	}
+
 	&-container {
 		display: flex;
 		justify-content: space-between;
