@@ -3,7 +3,7 @@
 	flex-direction: column;
 	gap: 1rem;
 	padding: 1rem;
-	background-color: #aebdca;
+	background-color: #d7e1e8;
 	width: 100%;
 
 	@media #{$mq-620-up} {
@@ -16,7 +16,6 @@
 		}
 	}
 	h3 {
-		color: white;
 		@media #{$mq-620-up} {
 			margin: auto;
 		}

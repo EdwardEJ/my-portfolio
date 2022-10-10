@@ -16,8 +16,8 @@ export default function AboutMe({ renderForm }) {
 					</p>
 					<p>
 						Outside of programming, I enjoy trying new recipes, travelling to
-						cities and countries I've never been to, discussing cinema and the
-						film industry, and brazilian jiujitsu
+						cities and countries I've never been to, discussing cinema, and
+						practicing bouldering
 					</p>
 				</div>
 			) : null}
