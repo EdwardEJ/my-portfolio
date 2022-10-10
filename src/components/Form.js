@@ -3,14 +3,11 @@ import Input from './Input';
 import TextArea from './TextArea';
 import Button from './Button';
 
-export default function ContactForm({ renderForm, onClick }) {
+export default function ContactForm() {
 	return (
-		<div className={`form-container ${!renderForm ? '' : 'show'} `}>
+		<div className='form-container'>
 			<div className='form-container-header'>
 				<h3>Contact Me</h3>
-				<button className='form-container-btn' onClick={onClick}>
-					X
-				</button>
 			</div>
 			<form
 				action='https://formsubmit.co/fcd3106d1813da082a039bb1035a667b'

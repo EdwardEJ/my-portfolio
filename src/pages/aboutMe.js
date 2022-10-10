@@ -19,6 +19,7 @@ export default function AboutMe({ renderForm }) {
 						cities and countries I've never been to, discussing cinema, and
 						practicing bouldering
 					</p>
+					<p>Feel free to reach out if you're looking to work together.</p>
 				</div>
 			) : null}
 		</section>
