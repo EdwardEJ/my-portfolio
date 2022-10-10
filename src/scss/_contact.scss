@@ -5,6 +5,9 @@
 		margin: 0;
 	}
 	@media #{$mq-620-up} {
-		display: none;
+		margin: auto 0;
+		.button {
+			display: none;
+		}
 	}
 }
