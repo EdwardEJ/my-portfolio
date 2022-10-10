@@ -1,4 +1,4 @@
-Personal Portfolio made using React (Gatsby) and SASS
+Mobile-first, personal portfolio made using React (Gatsby) and SASS
 
 ## 🚀 Quick start
 
