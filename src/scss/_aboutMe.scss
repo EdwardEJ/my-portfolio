@@ -3,12 +3,12 @@
 	flex-direction: column;
 	align-items: center;
 
-	@media #{$mq-620-up} {
+	@media #{$mq-1000-up} {
 		flex-direction: row;
 	}
 
 	h3 {
-		color: black;
+		color: #553c2c;
 	}
 
 	&-container {
@@ -25,10 +25,16 @@
 
 	&-img-container {
 		display: flex;
+
+		@media #{$mq-620-up} {
+			img {
+				border-radius: 10px;
+			}
+		}
 	}
 	p {
 		font-size: 1.2rem;
-		color: black;
+		color: #553c2c;
 		@media #{$mq-620-up} {
 			width: fit-content;
 		}

@@ -16,10 +16,10 @@ export default function Navbar() {
 			</div>
 			<div className='navbar-container'>
 				<HamburgerButton onClick={toggleNavItems} />
-				<div className={`navbar-menu-items ${animateMenu ? '' : 'closed'}`}>
+				{/* TODO: projects WIP*/}
+				{/* <div className={`navbar-menu-items ${animateMenu ? '' : 'closed'}`}>
 					<a href='#Projects'>Projects</a>
-					<a href='#Resume'>Resume</a>
-				</div>
+				</div> */}
 			</div>
 		</header>
 	);

@@ -6,6 +6,7 @@
 	padding: 0 1rem;
 	@media #{$mq-620-up} {
 		flex-direction: column;
+		padding: 0;
 	}
 
 	h1 {
@@ -15,12 +16,12 @@
 	}
 
 	&-container {
-		background-color: #5555551c;
+		background-color: #e8dfca;
 		@media #{$mq-620-up} {
 			text-align: center;
 		}
 		&.full-bleed {
-			box-shadow: 0 0 0 100vmax #5555551c;
+			box-shadow: 0 0 0 100vmax #e8dfca;
 			clip-path: inset(0 -100vmax);
 		}
 
@@ -68,8 +69,8 @@
 					padding: 0.25rem;
 				}
 				&:hover {
-					color: rgb(85, 85, 85);
-					box-shadow: inset 0 -2px 0 0 black;
+					color: #aebdca;
+					box-shadow: inset 0 -2px 0 0 #aebdca;
 				}
 			}
 		}

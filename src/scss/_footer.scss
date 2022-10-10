@@ -1,19 +1,16 @@
 .footer {
-	position: inherit;
-	bottom: 0;
-	right: 0;
-	left: 0;
 	padding: 0.5rem 1rem;
-	background-color: black;
-	@media #{$mq-620-up} {
-		position: absolute;
-	}
+	background-color: #e8dfca;
 
 	&-container {
 		display: flex;
 		justify-content: space-between;
 		align-items: end;
-		background-color: black;
+		background-color: #e8dfca;
+
+		p {
+			color: black;
+		}
 	}
 
 	&-social-container {
@@ -26,7 +23,7 @@
 		a {
 			display: flex;
 			img {
-				background: white;
+				background: #e8dfca;
 				height: 25px;
 				width: 25px;
 			}

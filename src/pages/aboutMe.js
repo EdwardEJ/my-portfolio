@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutMePhoto from '../images/aboutMePhoto.jpg';
+import aboutMePhoto from '../images/me.jpg';
 
 export default function AboutMe({ renderForm }) {
 	return (
@@ -11,9 +11,13 @@ export default function AboutMe({ renderForm }) {
 				<div className='about-me-container'>
 					<h3>About Me</h3>
 					<p>
-						Edward is a fullstack software developer focused crafting clean and
-						user-friendly experiences. He loves programming, traveling, cooking,
-						cinema, and mixed martial arts.
+						I'm a fullstack software developer focused on crafting clean and
+						user-friendly experiences.
+					</p>
+					<p>
+						Outside of programming, I enjoy trying new recipes, travelling to
+						cities and countries I've never been to, discussing cinema and the
+						film industry, and brazilian jiujitsu
 					</p>
 				</div>
 			) : null}

@@ -1,17 +1,12 @@
 button {
 	&.button {
-		border: 1px solid black;
-		color: black;
-		background-color: #5555551c;
+		color: #7895b2;
+		background-color: #e8dfca;
 		border-radius: 1.35rem;
 		padding: 0.65rem 0.85rem;
 		width: fit-content;
 		margin: auto;
 		font-size: 1rem;
 		font-weight: 600;
-
-		&.submit {
-			background-color: #99b7ee;
-		}
 	}
 }
