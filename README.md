@@ -1,5 +1,7 @@
 Mobile-first, personal portfolio made using React (Gatsby) and SASS
 
+Deployed using Vercel at https://edwardej.vercel.app/
+
 ## 🚀 Quick start
 
 1. Clone repo
