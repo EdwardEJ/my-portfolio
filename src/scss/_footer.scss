@@ -7,11 +7,6 @@
 		justify-content: space-between;
 		align-items: end;
 		background-color: black;
-		@media #{$mq-1000-up} {
-			width: 65%;
-			margin: 1rem auto;
-			border-radius: 10px;
-		}
 	}
 
 	&-social-container {
