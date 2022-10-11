@@ -1,11 +1,16 @@
 import React from 'react';
+import 'lazysizes';
 import aboutMePhoto from '../images/me.jpg';
 
 export default function AboutMe({ renderForm }) {
 	return (
 		<section className='about-me' id='about-me'>
 			<div className='about-me-img-container'>
-				<img className='aboutMePhoto' src={aboutMePhoto} alt='About Me' />
+				<img
+					className='aboutMePhoto lazyload'
+					data-src={aboutMePhoto}
+					alt='About Me'
+				/>
 			</div>
 			{!renderForm ? (
 				<div className='about-me-container'>
