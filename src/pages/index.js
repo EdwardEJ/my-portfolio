@@ -1,21 +1,19 @@
-import React, { useState } from 'react';
-import Navbar from '../components/navbar';
-import AboutMe from './aboutMe';
-import Contact from './contact';
-import Footer from '../components/footer';
+import React, { lazy, Suspense } from 'react';
 import '../scss/styles.scss';
+import Footer from '../components/footer';
+const Navbar = lazy(() => import('../components/navbar'));
+const AboutMe = lazy(() => import('./aboutMe'));
+const Contact = lazy(() => import('./contact'));
 
 const IndexPage = () => {
-	const [renderForm, setRenderForm] = useState(false);
-	function onClickrenderForm() {
-		setRenderForm(!renderForm);
-	}
 	return (
 		<>
 			<main className='main'>
-				<Navbar />
-				<AboutMe renderForm={renderForm} />
-				<Contact onClickrenderForm={onClickrenderForm} />
+				<Suspense fallback={<div>Loading...</div>}>
+					<Navbar />
+					<AboutMe />
+					<Contact />
+				</Suspense>
 			</main>
 			<Footer />
 		</>

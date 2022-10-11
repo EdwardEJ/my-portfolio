@@ -1,11 +1,16 @@
 import React from 'react';
+import 'lazysizes';
 import aboutMePhoto from '../images/me.jpg';
 
 export default function AboutMe({ renderForm }) {
 	return (
 		<section className='about-me' id='about-me'>
 			<div className='about-me-img-container'>
-				<img className='aboutMePhoto' src={aboutMePhoto} alt='About Me' />
+				<img
+					className='aboutMePhoto lazyload'
+					data-src={aboutMePhoto}
+					alt='About Me'
+				/>
 			</div>
 			{!renderForm ? (
 				<div className='about-me-container'>
@@ -16,9 +21,10 @@ export default function AboutMe({ renderForm }) {
 					</p>
 					<p>
 						Outside of programming, I enjoy trying new recipes, travelling to
-						cities and countries I've never been to, discussing cinema and the
-						film industry, and brazilian jiujitsu
+						cities and countries I've never been to, discussing cinema, and
+						practicing bouldering
 					</p>
+					<p>Feel free to reach out if you're looking to work together.</p>
 				</div>
 			) : null}
 		</section>
