@@ -14,7 +14,11 @@ export default function Footer() {
 				<div className='footer-social-container'>
 					<ul className='footer-social-links'>
 						<li>
-							<a target='_blank' href='https://github.com/edwardej'>
+							<a
+								target='_blank'
+								rel='noreferrer'
+								href='https://github.com/edwardej'
+							>
 								<img
 									className='lazyload'
 									alt='github-icon'
@@ -23,7 +27,11 @@ export default function Footer() {
 							</a>
 						</li>
 						<li>
-							<a target='_blank' href='https://www.linkedin.com/in/ed-estrada/'>
+							<a
+								target='_blank'
+								rel='noreferrer'
+								href='https://www.linkedin.com/in/ed-estrada/'
+							>
 								<img
 									className='lazyload'
 									alt='linkedin-icon'
